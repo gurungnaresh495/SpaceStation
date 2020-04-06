@@ -12,6 +12,13 @@ namespace SpaceStation
         private int location;
         private List<Product> localPrices;
 
+        public SpaceShip(int id)
+        {
+            this.shipId = id;
+            this.location = -1;
+            this.localPrices = new List<Product>();
+        }
+
         //getter and setters
         public int ShipId 
         {

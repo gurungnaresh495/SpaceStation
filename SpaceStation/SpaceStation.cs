@@ -9,11 +9,16 @@ namespace SpaceStation
     public class SpaceStation : Subject
     {
         private int stationId { get; set; }
-
         private List<Product> products { get; set; }
-
         private List<Observer> dockedSpaceShips { get; set; }
 
+        public SpaceStation(int id)
+        {
+            this.stationId = id;
+            this.products = new List<Product>();
+            this.dockedSpaceShips = new List<Observer>();
+        }
+        
         public int StationId
         {
             get { return this.stationId; }
